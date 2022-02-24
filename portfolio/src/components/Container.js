@@ -208,7 +208,7 @@ const Container = ({ userRequest }) => {
     useEffect(scrollToBottom, [elements]);
 
     return (
-        <div id="container" className="overflow-y-scroll">
+        <div className="overflow-y-scroll">
             <div className="text-3xl pb-12">
                 <Typewriter
                     onInit={(typewriter) => {
