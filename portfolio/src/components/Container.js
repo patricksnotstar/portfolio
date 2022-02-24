@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import CommandItems from "../constants/CommandItems";
 import Typewriter from "typewriter-effect";
 import PatrickNguyenResume from "../assets/PatrickNguyenResume.pdf";
-import LifeBoosterRecommendationLetter from "../assets/LifeBoosterRecommendationLetter.docx";
+import LifeBoosterRecommendationLetter from "../assets/LifeBoosterRecommendationLetter.pdf";
 import TerrameraReferenceLetter from "../assets/TerrameraReferenceLetter.pdf";
 
 const Container = ({ userRequest }) => {
@@ -17,7 +17,7 @@ const Container = ({ userRequest }) => {
     const checkUserCommand = () => {
         if (!userRequest.value) return;
 
-        switch (userRequest.value) {
+        switch (userRequest.value.toLowerCase()) {
             case "resume":
                 responseCenter(
                     <div className="pb-4">
@@ -31,7 +31,7 @@ const Container = ({ userRequest }) => {
                     </div>
                 );
                 break;
-            case "experience":
+            case "experiences":
                 responseCenter(
                     <div className="pb-4">
                         <h2 className="pb-2">{"$ " + userRequest.value}</h2>
@@ -45,8 +45,8 @@ const Container = ({ userRequest }) => {
                             resulted in a cleaner code base and with industry best practices
                         </h3>
                         <h3>
-                            {">>"} Developed the back-end in Node.js with CQRS and event-driven
-                            micro-services architechture
+                            {">>"} Developed the back-end in Node.js and Typescript with CQRS and
+                            event-driven micro-services architechture
                         </h3>
                         <h3>
                             {">>"} Redesigned and refactored the processing pipeline which made it
@@ -64,9 +64,9 @@ const Container = ({ userRequest }) => {
 
                         <a
                             href={LifeBoosterRecommendationLetter}
-                            download="LifeBoosterRecommendationLetter.docx"
+                            download="LifeBoosterRecommendationLetter.pdf"
                         >
-                            <p className="text-blue-600 underline pt-4">
+                            <p className="text-blue-600 underline pt-2">
                                 Click here to download my mentor's recommendation letter
                             </p>
                         </a>
@@ -96,7 +96,7 @@ const Container = ({ userRequest }) => {
                         </h3>
 
                         <a href={TerrameraReferenceLetter} download="TerrameraReferenceLetter.pdf">
-                            <p className="text-blue-600 underline pt-4">
+                            <p className="text-blue-600 underline pt-2">
                                 Click here to download my mentor's recommendation letter
                             </p>
                         </a>
@@ -183,6 +183,108 @@ const Container = ({ userRequest }) => {
                     </div>
                 );
                 break;
+            case "contact info":
+                responseCenter(
+                    <div className="pb-4">
+                        <h2 className="pb-2">{"$ " + userRequest.value}</h2>
+
+                        <h3 className="pt-1"> Phone: 604-779-4316</h3>
+                        <h3 className="pt-1"> E-mail: patricknguyen97@gmail.com</h3>
+                        <h3 className="pt-1">
+                            Github:{" "}
+                            <a
+                                href="https://github.com/patricksnotstar"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-600 underline"
+                            >
+                                https://github.com/patricksnotstar
+                            </a>
+                        </h3>
+                        <h3 className="pt-1">
+                            LinkedIn:{" "}
+                            <a
+                                href="www.linkedin.com/in/patrick-nguyen-0"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-600 underline"
+                            >
+                                www.linkedin.com/in/patrick-nguyen-0
+                            </a>
+                        </h3>
+                    </div>
+                );
+                break;
+            case "hobbies":
+                responseCenter(
+                    <div className="pb-4">
+                        <h2 className="pb-2">{"$ " + userRequest.value}</h2>
+
+                        <h2 className="pb-2"> Custom Mechanical keyboards:</h2>
+                        <h3>{">>"} Mr.Suit with POM plate, Gateron ink black v2 switches</h3>
+                        <h3>{">>"} Bakeneko65 with FR4 plate, Gazzew Boba U4T switches</h3>
+                        <h3>{">>"} Glacier80 with no plate, SOTC switches</h3>
+
+                        <h2 className="pb-2 pt-2"> Video Games:</h2>
+                        <h3>{">>"} The Witcher: Wild Hunt</h3>
+                        <h3>{">>"} League of Legends</h3>
+                        <h3>{">>"} Apex Legends</h3>
+                        <h3>{">>"} Valorant</h3>
+
+                        <h2 className="pb-2 pt-2"> Hiking</h2>
+                        <h2 className="pb-2"> Snowshoeing</h2>
+                    </div>
+                );
+                break;
+            case "skills":
+                responseCenter(
+                    <div className="pb-4">
+                        <h2 className="pb-2">{"$ " + userRequest.value}</h2>
+
+                        <h2 className="pb-2"> Technical skills:</h2>
+                        <h3>{">>"} C/C++</h3>
+                        <h3>{">>"} Javascript/Typescript</h3>
+                        <h3>{">>"} Vue.js, React.js, Node.js</h3>
+                        <h3>{">>"} Java</h3>
+                        <h3>{">>"} Spring boot, Hibernate</h3>
+                        <h3>{">>"} Python</h3>
+                        <h3>{">>"} Azure, CosmosDb</h3>
+                        <h3>{">>"} PostgreSQL</h3>
+
+                        <h2 className="pb-2 pt-2"> Transferrable skills:</h2>
+                        <h3>{">>"} Communication</h3>
+                        <h3>{">>"} Interpersonal</h3>
+                        <h3>{">>"} Teamwork</h3>
+                        <h3>{">>"} Resourcefulness</h3>
+                        <h3>{">>"} Creativity</h3>
+                        <h3>{">>"} Quick learner</h3>
+                    </div>
+                );
+                break;
+            case "references":
+                responseCenter(
+                    <div className="pb-4">
+                        <h2 className="pb-2">{"$ " + userRequest.value}</h2>
+
+                        <h2>LifeBooster</h2>
+                        <a
+                            href={LifeBoosterRecommendationLetter}
+                            download="LifeBoosterRecommendationLetter.docx"
+                        >
+                            <p className="text-blue-600 underline pt-2">
+                                Click here to download my mentor's recommendation letter
+                            </p>
+                        </a>
+
+                        <h2 className="pt-3">Terramera, Inc.</h2>
+                        <a href={TerrameraReferenceLetter} download="TerrameraReferenceLetter.pdf">
+                            <p className="text-blue-600 underline pt-2">
+                                Click here to download my mentor's recommendation letter
+                            </p>
+                        </a>
+                    </div>
+                );
+                break;
             case "clear":
                 setElements([]);
                 break;
@@ -246,7 +348,7 @@ const Container = ({ userRequest }) => {
 
             {loading ? null : (
                 <>
-                    <h2>Type help to see this list of commands</h2>
+                    <h2 className="pb-2">Type help to see this list of commands</h2>
                     <CommandItems />
                 </>
             )}
