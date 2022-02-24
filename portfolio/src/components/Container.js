@@ -202,6 +202,7 @@ const Container = ({ userRequest }) => {
 
     useEffect(() => {
         checkUserCommand();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [userRequest.id]);
 
     useEffect(scrollToBottom, [elements]);
