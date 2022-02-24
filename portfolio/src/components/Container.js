@@ -108,7 +108,23 @@ const Container = ({ userRequest }) => {
                     <div className="pb-4">
                         <h2 className="pb-2">{"$ " + userRequest.value}</h2>
 
-                        <h2>Beagle Bone Drum Player</h2>
+                        <h2>This website</h2>
+                        <h3 className="pb-2">Personal portfolio</h3>
+                        <h3>{">>"} Built using React.js and Tailwind.css</h3>
+                        <h3>{">>"} Deployed on Netlify</h3>
+                        <h3>
+                            {">>"} You can check out my code on{" "}
+                            <a
+                                href="https://github.com/patricksnotstar/portfolio"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-600 underline"
+                            >
+                                Github
+                            </a>
+                        </h3>
+
+                        <h2 className="pt-3">Beagle Bone Drum Player</h2>
                         <h3 className="pb-2">Project for embedded system class | March, 2021</h3>
                         <h3>
                             {">>"} Developed a front-end using HTML, CSS, JQuery to interact with
