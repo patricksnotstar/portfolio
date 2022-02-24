@@ -269,7 +269,7 @@ const Container = ({ userRequest }) => {
                         <h2>LifeBooster</h2>
                         <a
                             href={LifeBoosterRecommendationLetter}
-                            download="LifeBoosterRecommendationLetter.docx"
+                            download="LifeBoosterRecommendationLetter.pdf"
                         >
                             <p className="text-blue-600 underline pt-2">
                                 Click here to download my mentor's recommendation letter
