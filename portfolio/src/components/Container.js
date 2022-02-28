@@ -400,6 +400,21 @@ const Container = ({ userRequest }) => {
                     </div>
                 );
                 break;
+            case "education":
+                responseCenter(
+                    <div className="pb-4">
+                        <h2 className="pb-2 text-gray-400">{"$ " + userRequest.value}</h2>
+
+                        <h2 className="font-bold text-lg text-sky-200">
+                            Bachelor of Science in Computing Science
+                        </h2>
+                        <h3>
+                            <span className="italic">Simon Fraser University</span> |{" "}
+                            <span className="italic">Graduating in May 2022</span>
+                        </h3>
+                    </div>
+                );
+                break;
             case "clear":
                 setElements([]);
                 break;

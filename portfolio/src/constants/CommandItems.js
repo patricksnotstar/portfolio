@@ -8,6 +8,7 @@ const commandItems = () => {
             <h3> {"$ "} Projects </h3>
             <h3> {"$ "} Experience </h3>
             <h3> {"$ "} Skills </h3>
+            <h3> {"$ "} Education </h3>
             <h3> {"$ "} Hobbies </h3>
             <h3> {"$ "} Contact Info </h3>
             <h3> {"$ "} References </h3>
