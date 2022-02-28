@@ -9,6 +9,7 @@ const Input = ({ userInputCallback }) => {
             <input
                 autoFocus
                 autoComplete="off"
+                placeholder="Enter command here..."
                 className="w-11/12 bg-transparent border-b-2"
                 type="text"
                 id="command"
