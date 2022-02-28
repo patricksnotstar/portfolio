@@ -4,6 +4,7 @@ import Typewriter from "typewriter-effect";
 import PatrickNguyenResume from "../assets/PatrickNguyenResume.pdf";
 import LifeBoosterRecommendationLetter from "../assets/LifeBoosterRecommendationLetter.pdf";
 import TerrameraReferenceLetter from "../assets/TerrameraReferenceLetter.pdf";
+import ArrowSymbol from "../constants/ArrowSymbol";
 
 const Container = ({ userRequest }) => {
     const [loading, setLoading] = useState(true);
@@ -21,7 +22,7 @@ const Container = ({ userRequest }) => {
             case "resume":
                 responseCenter(
                     <div className="pb-4">
-                        <h2 className="pb-2">{"$ " + userRequest.value}</h2>
+                        <h2 className="pb-2 text-gray-400">{"$ " + userRequest.value}</h2>
 
                         <a href={PatrickNguyenResume} download="PatrickNguyenResume.pdf">
                             <p className="text-blue-600 underline pt-2">
@@ -31,35 +32,50 @@ const Container = ({ userRequest }) => {
                     </div>
                 );
                 break;
-            case "experiences":
+            case "experience":
                 responseCenter(
                     <div className="pb-4">
-                        <h2 className="pb-2">{"$ " + userRequest.value}</h2>
+                        <h2 className="pb-2 text-gray-400">{"$ " + userRequest.value}</h2>
 
-                        <h2>LifeBooster</h2>
+                        <h1 className="font-bold text-lg text-sky-200">LifeBooster</h1>
                         <h3 className="pb-2">
-                            Full Stack developer | May 3rd, 2021 - December 31st, 2021
+                            <span className="italic">Full Stack developer</span> |{" "}
+                            <span className="italic">May 3rd, 2021 - December 31st, 2021</span>
                         </h3>
                         <h3>
-                            {">>"} Reworked the front-end using Vue 3 and with new UI desgins,
-                            resulted in a cleaner code base and with industry best practices
+                            <ArrowSymbol />
+                            Reworked the front-end using Vue 3 and new UI desgins, resulting in a
+                            cleaner code base that follows industry best practices
                         </h3>
                         <h3>
-                            {">>"} Developed the back-end in Node.js and Typescript with CQRS and
+                            <ArrowSymbol />
+                            Developed the back-end in Node.js and Typescript with CQRS and an
                             event-driven micro-services architechture
                         </h3>
                         <h3>
-                            {">>"} Redesigned and refactored the processing pipeline which made it
-                            more robust, efficient and easier to add new features
+                            <ArrowSymbol />
+                            Redesigned and refactored the processing pipeline which made it more
+                            robust, efficient and easier to add new features
                         </h3>
                         <h3>
-                            {">>"} Implemented pagination with Cosmos DB to improve the overall
-                            stability of the application
+                            <ArrowSymbol />
+                            Implemented pagination with Cosmos DB to improve the overall scalability
+                            of the application
                         </h3>
-                        <h3>{">>"} Created bookmarklets to streamline Git branch creation</h3>
                         <h3>
-                            {">>"} You can email donald.duy@lifebooster.ca and ask for a demo of the
-                            app I worked on
+                            <ArrowSymbol />
+                            Created bookmarklets to streamline Git branch creation
+                        </h3>
+                        <h3>
+                            <ArrowSymbol />
+                            You can email{" "}
+                            <a
+                                href="mailto:donald.duy@lifebooster.ca"
+                                className="text-blue-600 underline pt-2"
+                            >
+                                donald.duy@lifebooster.ca
+                            </a>{" "}
+                            and ask for a demo of the app I worked on
                         </h3>
 
                         <a
@@ -71,28 +87,34 @@ const Container = ({ userRequest }) => {
                             </p>
                         </a>
 
-                        <h2 className="pt-3">Terramera, Inc.</h2>
+                        <h1 className="pt-3 font-bold text-lg text-sky-200">Terramera, Inc.</h1>
                         <h3 className="pb-2">
-                            Full Stack developer | January 1st, 2020 - August 31st, 2020
-                        </h3>
-                        <h3>{">>"} Implemented front-end in Vue 2 in accordance with UX designs</h3>
-                        <h3>
-                            {">>"} Implemented a media file upload and storage solution which
-                            resulted in more efficient and streamlined data capture processes for
-                            scientists
+                            <span className="italic">Full Stack developer</span> |{" "}
+                            <span className="italic">January 1st, 2020 - August 31st, 2020</span>
                         </h3>
                         <h3>
-                            {">>"} Researched and implemented server-side antivirus to add security
-                            to the file upload system
+                            <ArrowSymbol /> Implemented the front-end in Vue 2 in accordance with UX
+                            designs
                         </h3>
                         <h3>
-                            {">>"} Implemented the back-end microservices using Java, Spring boot
-                            and Hibernate
+                            <ArrowSymbol /> Implemented a media file upload and storage solution
+                            which resulted in more efficient and streamlined data capture processes
+                            for company scientists
                         </h3>
-                        <h3> {">>"} Maintained databases with PostgreSQL </h3>
                         <h3>
-                            {">>"} Wrote unit and integration tests using Mockito for back-end and
-                            Jest for front-end
+                            <ArrowSymbol /> Researched and implemented server-side antivirus
+                            protection to add security to the file upload system
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Implemented back-end microservices using Java, Spring
+                            boot and Hibernate
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Maintained databases with PostgreSQL{" "}
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Wrote unit and integration tests using Mockito for the
+                            back-end and Jest for the front-end
                         </h3>
 
                         <a href={TerrameraReferenceLetter} download="TerrameraReferenceLetter.pdf">
@@ -106,14 +128,18 @@ const Container = ({ userRequest }) => {
             case "projects":
                 responseCenter(
                     <div className="pb-4">
-                        <h2 className="pb-2">{"$ " + userRequest.value}</h2>
+                        <h2 className="pb-2 text-gray-400">{"$ " + userRequest.value}</h2>
 
-                        <h2>This website</h2>
-                        <h3 className="pb-2">Personal portfolio</h3>
-                        <h3>{">>"} Built using React.js and Tailwind.css</h3>
-                        <h3>{">>"} Deployed on Netlify</h3>
+                        <h2 className="font-bold text-lg text-sky-200">This website</h2>
+                        <h3 className="pb-2 italic">Personal portfolio</h3>
                         <h3>
-                            {">>"} You can check out my code on{" "}
+                            <ArrowSymbol /> Built using React.js and Tailwind.css
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Deployed on Netlify
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> You can check out my code on{" "}
                             <a
                                 href="https://github.com/patricksnotstar/portfolio"
                                 target="_blank"
@@ -124,26 +150,30 @@ const Container = ({ userRequest }) => {
                             </a>
                         </h3>
 
-                        <h2 className="pt-3">Beagle Bone Drum Player</h2>
-                        <h3 className="pb-2">Project for embedded system class | March, 2021</h3>
-                        <h3>
-                            {">>"} Developed a front-end using HTML, CSS, JQuery to interact with
-                            the BeagleBone board
+                        <h2 className="pt-3 font-bold text-lg text-sky-200">
+                            Beagle Bone Drum Player
+                        </h2>
+                        <h3 className="pb-2">
+                            {" "}
+                            <span className="italic">
+                                Group project for Embedded Systems class
+                            </span>{" "}
+                            | <span className="italic">March, 2021</span>
                         </h3>
                         <h3>
-                            {">>"} Wrote a simple Node.js beck-end to handle front-end requests and
-                            send them to the BeagleBone board
+                            <ArrowSymbol /> Developed a front-end using HTML, CSS, JQuery to
+                            interact with the BeagleBone board
                         </h3>
                         <h3>
-                            {">>"} Wrote a multi-threaded BeagleBone firmware in C to handle many
-                            requests to play sound at once
+                            <ArrowSymbol /> Wrote a simple Node.js back-end to handle front-end
+                            requests and send them to the BeagleBone board
                         </h3>
                         <h3>
-                            {">>"} Implemented pagination with Cosmos DB to improve the overall
-                            stability of the application
+                            <ArrowSymbol /> Wrote multi-threaded BeagleBone firmware in C that
+                            handles many simultaneous requests to play sounds at once
                         </h3>
                         <h3>
-                            {">>"} Pair-programmed. Check out our code on{" "}
+                            <ArrowSymbol /> Pair-programmed. Check out our code on{" "}
                             <a
                                 href="https://github.com/patricksnotstar/Embedded_systems_class/tree/master/as3"
                                 target="_blank"
@@ -154,23 +184,37 @@ const Container = ({ userRequest }) => {
                             </a>
                         </h3>
 
-                        <h2 className="pt-3">
-                            Sentiment Analysis and Topic Classification of Newspapers
+                        <h2 className="pt-3 font-bold text-lg text-sky-200">
+                            Sentiment Analysis and Topic Classification of Newspaper Articles
                         </h2>
                         <h3 className="pb-2">
-                            Natural Language Processing class project | November, 2020
+                            <span className="italic">
+                                Group project for Natural Language Processing class
+                            </span>{" "}
+                            | <span className="italic">November, 2020</span>
                         </h3>
                         <h3>
-                            {">>"} Worked with a team of 4 to develop a sentiment analysis and topic
-                            classification pipeline in Python{" "}
+                            <ArrowSymbol /> Worked with a team of 4 to develop a sentiment analysis
+                            and topic classification pipeline in Python{" "}
                         </h3>
                         <h3>
-                            {">>"} Wrote a web scraper to collect newspaper data from different news
-                            outlets
+                            <ArrowSymbol /> Wrote a web scraper to collect newspaper data from
+                            different news outlets
                         </h3>
-                        <h3>{">>"} Created a front-end to visualize our results using Vue 2</h3>
                         <h3>
-                            {">>"} Check out our code, and our paper on{" "}
+                            <ArrowSymbol /> Created a front-end to visualize our results using Vue
+                            2. You can check it out{" "}
+                            <a
+                                href="https://teletubbies-front-end.vercel.app/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-600 underline"
+                            >
+                                here
+                            </a>
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Check out our code, and our paper on{" "}
                             <a
                                 href="https://github.com/patricksnotstar/NLP-class-paper"
                                 target="_blank"
@@ -186,10 +230,19 @@ const Container = ({ userRequest }) => {
             case "contact info":
                 responseCenter(
                     <div className="pb-4">
-                        <h2 className="pb-2">{"$ " + userRequest.value}</h2>
+                        <h2 className="pb-2 text-gray-400">{"$ " + userRequest.value}</h2>
 
                         <h3 className="pt-1"> Phone: 604-779-4316</h3>
-                        <h3 className="pt-1"> E-mail: patricknguyen97@gmail.com</h3>
+                        <h3 className="pt-1">
+                            {" "}
+                            E-mail:{" "}
+                            <a
+                                href="mailto:patricknguyen97@gmail.com"
+                                className="text-blue-600 underline"
+                            >
+                                patricknguyen97@gmail.com
+                            </a>
+                        </h3>
                         <h3 className="pt-1">
                             Github:{" "}
                             <a
@@ -218,55 +271,117 @@ const Container = ({ userRequest }) => {
             case "hobbies":
                 responseCenter(
                     <div className="pb-4">
-                        <h2 className="pb-2">{"$ " + userRequest.value}</h2>
+                        <h2 className="pb-2 text-gray-400">{"$ " + userRequest.value}</h2>
 
-                        <h2 className="pb-2"> Custom Mechanical keyboards:</h2>
-                        <h3>{">>"} Mr.Suit with POM plate, Gateron ink black v2 switches</h3>
-                        <h3>{">>"} Bakeneko65 with FR4 plate, Gazzew Boba U4T switches</h3>
-                        <h3>{">>"} Glacier80 with no plate, SOTC switches</h3>
+                        <h2 className="pb-2 font-bold text-lg text-sky-200">
+                            {" "}
+                            Custom Mechanical Keyboards:
+                        </h2>
+                        <h3>
+                            <ArrowSymbol /> Mr.Suit with POM plate, Gateron ink black v2 switches
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Bakeneko65 with FR4 plate, Gazzew Boba U4T switches
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Glacier80 with no plate, SOTC switches
+                        </h3>
 
-                        <h2 className="pb-2 pt-2"> Video Games:</h2>
-                        <h3>{">>"} The Witcher: Wild Hunt</h3>
-                        <h3>{">>"} League of Legends</h3>
-                        <h3>{">>"} Apex Legends</h3>
-                        <h3>{">>"} Valorant</h3>
+                        <h2 className="pb-2 pt-2 font-bold text-lg text-sky-200"> Video Games:</h2>
+                        <h3>
+                            <ArrowSymbol /> The Witcher: Wild Hunt
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> League of Legends
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Apex Legends
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Valorant
+                        </h3>
 
-                        <h2 className="pb-2 pt-2"> Hiking</h2>
-                        <h2 className="pb-2"> Snowshoeing</h2>
+                        <h2 className="pb-2 pt-2 font-bold text-lg text-sky-200">
+                            {" "}
+                            Weightlifting:
+                        </h2>
+                        <h3>
+                            <ArrowSymbol /> Squat PR: 315 lbs
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Deadlift PR: 315 lbs
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Benchpress PR: 185 lbs
+                        </h3>
+
+                        <h2 className="pb-2 pt-2 font-bold text-lg text-sky-200"> Hiking</h2>
+                        <h2 className="pb-2 font-bold text-lg text-sky-200"> Snowshoeing</h2>
                     </div>
                 );
                 break;
             case "skills":
                 responseCenter(
                     <div className="pb-4">
-                        <h2 className="pb-2">{"$ " + userRequest.value}</h2>
+                        <h2 className="pb-2 text-gray-400">{"$ " + userRequest.value}</h2>
 
-                        <h2 className="pb-2"> Technical skills:</h2>
-                        <h3>{">>"} C/C++</h3>
-                        <h3>{">>"} Javascript/Typescript</h3>
-                        <h3>{">>"} Vue.js, React.js, Node.js</h3>
-                        <h3>{">>"} Java</h3>
-                        <h3>{">>"} Spring boot, Hibernate</h3>
-                        <h3>{">>"} Python</h3>
-                        <h3>{">>"} Azure, CosmosDb</h3>
-                        <h3>{">>"} PostgreSQL</h3>
+                        <h2 className="pb-2 font-bold text-lg text-sky-200"> Technical skills:</h2>
+                        <h3>
+                            <ArrowSymbol /> C/C++
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Javascript/Typescript
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Vue.js, React.js, Node.js
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Java
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Spring boot, Hibernate
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Python
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Azure, CosmosDb
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> PostgreSQL
+                        </h3>
 
-                        <h2 className="pb-2 pt-2"> Transferrable skills:</h2>
-                        <h3>{">>"} Communication</h3>
-                        <h3>{">>"} Interpersonal</h3>
-                        <h3>{">>"} Teamwork</h3>
-                        <h3>{">>"} Resourcefulness</h3>
-                        <h3>{">>"} Creativity</h3>
-                        <h3>{">>"} Quick learner</h3>
+                        <h2 className="pb-2 pt-2 font-bold text-lg text-sky-200">
+                            {" "}
+                            Transferrable skills:
+                        </h2>
+                        <h3>
+                            <ArrowSymbol /> Communication
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Interpersonal
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Teamwork
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Resourcefulness
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Creativity
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Quick learner
+                        </h3>
                     </div>
                 );
                 break;
             case "references":
                 responseCenter(
                     <div className="pb-4">
-                        <h2 className="pb-2">{"$ " + userRequest.value}</h2>
+                        <h2 className="pb-2 text-gray-400">{"$ " + userRequest.value}</h2>
 
-                        <h2>LifeBooster</h2>
+                        <h2 className="font-bold text-lg text-sky-200">LifeBooster</h2>
                         <a
                             href={LifeBoosterRecommendationLetter}
                             download="LifeBoosterRecommendationLetter.pdf"
@@ -276,7 +391,7 @@ const Container = ({ userRequest }) => {
                             </p>
                         </a>
 
-                        <h2 className="pt-3">Terramera, Inc.</h2>
+                        <h2 className="pt-3 font-bold text-lg text-sky-200">Terramera, Inc.</h2>
                         <a href={TerrameraReferenceLetter} download="TerrameraReferenceLetter.pdf">
                             <p className="text-blue-600 underline pt-2">
                                 Click here to download my mentor's recommendation letter
@@ -293,7 +408,7 @@ const Container = ({ userRequest }) => {
             case "help":
                 responseCenter(
                     <div className="pb-4">
-                        <h2 className="pb-2">{"$ " + userRequest.value}</h2>
+                        <h2 className="pb-2 text-gray-400">{"$ " + userRequest.value}</h2>
 
                         <CommandItems />
                     </div>
@@ -302,10 +417,10 @@ const Container = ({ userRequest }) => {
             default:
                 responseCenter(
                     <div className="pb-4">
-                        <h2 className="pb-2">{"$ " + userRequest.value}</h2>
+                        <h2 className="pb-2 text-gray-400">{"$ " + userRequest.value}</h2>
 
                         <h2 className="pb-2">
-                            Invalid command. Please try again with one of these following commands:{" "}
+                            Invalid command. Please try again with one of the following commands:{" "}
                         </h2>
                         <CommandItems />
                     </div>
@@ -348,7 +463,10 @@ const Container = ({ userRequest }) => {
 
             {loading ? null : (
                 <>
-                    <h2 className="pb-2">Type help to see this list of commands</h2>
+                    <h2 className="pb-2">
+                        Type <span className="text-yellow-200">help</span> to see this list of
+                        commands
+                    </h2>
                     <CommandItems />
                 </>
             )}
