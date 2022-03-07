@@ -257,7 +257,7 @@ const Container = ({ userRequest }) => {
                         <h3 className="pt-1">
                             LinkedIn:{" "}
                             <a
-                                href="www.linkedin.com/in/patrick-nguyen-0"
+                                href="https://www.linkedin.com/in/patrick-nguyen-0/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-blue-600 underline"
