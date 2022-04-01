@@ -150,6 +150,38 @@ const Container = ({ userRequest }) => {
                             </a>
                         </h3>
 
+                        <h2 className="pt-3 font-bold text-lg text-sky-200">Route Planner App</h2>
+                        <h3 className="pb-2">
+                            {" "}
+                            <span className="italic">Personal Project</span> |{" "}
+                            <span className="italic">March, 2022</span>
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Co-developed an app that calculates the most efficient
+                            order of destinations
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Worked with Bing Maps API to get location and route data
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Wrote an algorithm that returns the order of
+                            destinations that will minimize travel distance
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Created the app using React-Native
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Unpublished but you can check out my code on{" "}
+                            <a
+                                href="https://github.com/kchangch/Route-Planner"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-600 underline"
+                            >
+                                Github
+                            </a>
+                        </h3>
+
                         <h2 className="pt-3 font-bold text-lg text-sky-200">
                             Beagle Bone Drum Player
                         </h2>
@@ -217,6 +249,32 @@ const Container = ({ userRequest }) => {
                             <ArrowSymbol /> Check out our code, and our paper on{" "}
                             <a
                                 href="https://github.com/patricksnotstar/NLP-class-paper"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-600 underline"
+                            >
+                                Github
+                            </a>
+                        </h3>
+
+                        <h2 className="pt-3 font-bold text-lg text-sky-200">Golang Blockchain</h2>
+                        <h3 className="pb-2">
+                            <span className="italic">
+                                Group project for Comparative Programming Languages class
+                            </span>{" "}
+                            | <span className="italic">November, 2018</span>
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Implemented a simple blockchain in Golang
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Utilized Golang's simple concurrency to create multiple
+                            worker threads, resulted in a faster runtime
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Check out my code on{" "}
+                            <a
+                                href="https://github.com/patricksnotstar/GoBlockChain"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-blue-600 underline"
@@ -408,9 +466,12 @@ const Container = ({ userRequest }) => {
                         <h2 className="font-bold text-lg text-sky-200">
                             Bachelor of Science in Computing Science
                         </h2>
-                        <h3>
+                        <h3 className="pb-2">
                             <span className="italic">Simon Fraser University</span> |{" "}
                             <span className="italic">Graduating in May 2022</span>
+                        </h3>
+                        <h3>
+                            <ArrowSymbol /> Dean's honour roll Fall 2019
                         </h3>
                     </div>
                 );
