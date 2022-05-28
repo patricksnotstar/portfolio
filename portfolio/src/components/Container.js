@@ -37,6 +37,12 @@ const Container = ({ userRequest }) => {
                     <div className="pb-4">
                         <h2 className="pb-2 text-gray-400">{"$ " + userRequest.value}</h2>
 
+                        <h1 className="font-bold text-lg text-sky-200">Amazon</h1>
+                        <h3 className="pb-2">
+                            <span className="italic">Software Development Engineer I</span> |{" "}
+                            <span className="italic">June 13th, 2022 - Current</span>
+                        </h3>
+
                         <h1 className="font-bold text-lg text-sky-200">LifeBooster</h1>
                         <h3 className="pb-2">
                             <span className="italic">Full Stack developer</span> |{" "}
@@ -87,7 +93,7 @@ const Container = ({ userRequest }) => {
                             </p>
                         </a>
 
-                        <h1 className="pt-3 font-bold text-lg text-sky-200">Terramera, Inc.</h1>
+                        <h1 className="pt-3 font-bold text-lg text-sky-200">Terramera</h1>
                         <h3 className="pb-2">
                             <span className="italic">Full Stack developer</span> |{" "}
                             <span className="italic">January 1st, 2020 - August 31st, 2020</span>
@@ -467,11 +473,10 @@ const Container = ({ userRequest }) => {
                             Bachelor of Science in Computing Science
                         </h2>
                         <h3 className="pb-2">
-                            <span className="italic">Simon Fraser University</span> |{" "}
-                            <span className="italic">Graduating in May 2022</span>
+                            <span className="italic">Simon Fraser University</span>
                         </h3>
                         <h3>
-                            <ArrowSymbol /> Dean's honour roll Fall 2019
+                            <ArrowSymbol /> 2x Dean's honour roll, 1x President's honour roll
                         </h3>
                     </div>
                 );
