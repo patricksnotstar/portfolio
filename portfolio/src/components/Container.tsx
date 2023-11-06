@@ -1,10 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import CommandItems from "../constants/CommandItems";
 import Typewriter from "typewriter-effect";
-import PatrickNguyenResume from "../assets/PatrickNguyenResume.pdf";
-import LifeBoosterRecommendationLetter from "../assets/LifeBoosterRecommendationLetter.pdf";
-import TerrameraReferenceLetter from "../assets/TerrameraReferenceLetter.pdf";
-import ArrowSymbol from "../constants/ArrowSymbol";
 import Resume from "./Resume";
 import DefaultOrHelp from "./DefaultOrHelp";
 import Education from "./Education";
@@ -14,7 +10,6 @@ import Experiences from "./Experiences";
 import Hobbies from "./Hobbies";
 import Projects from "./Projects";
 import Skills from "./Skills";
-import { commands } from "../constants/CommandLists";
 
 const Container = ({ userRequest }) => {
     const [loading, setLoading] = useState(true);
