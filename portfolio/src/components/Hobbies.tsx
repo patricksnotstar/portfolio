@@ -1,6 +1,5 @@
 import React from "react";
 import ArrowSymbol from "../constants/ArrowSymbol";
-import Line from "../constants/Line";
 import hobbies from "../constants/Hobbies";
 
 const Hobbies = ({ userInput }) => {
