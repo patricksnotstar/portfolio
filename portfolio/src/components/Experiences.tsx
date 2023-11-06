@@ -9,7 +9,7 @@ const Experiences = ({ userInput }) => {
             <h2 className="pb-2 text-gray-400">{"$ " + userInput}</h2>
             {Object.entries(experience).map(([company, jobDesc]) => {
                 return (
-                    <div>
+                    <div className="pb-5">
                         <h1 className="font-bold text-lg text-sky-200">{company}</h1>
                         <Line />
                         <h3 className="pb-2">
