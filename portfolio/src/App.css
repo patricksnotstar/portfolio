@@ -11,3 +11,7 @@ select:focus {
 ::-webkit-scrollbar {
     display: none;
 }
+
+.inputArea {
+    all: unset;
+}
