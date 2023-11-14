@@ -22,9 +22,9 @@ const experience: Experience = {
         date: "May - December 2021",
         title: "Full Stack Developer Co-op",
         desc: [
-            "Reworked the front-end using Vue 3 and with new UI designs, resulted in a cleaner code base developed with best practices.",
+            "Reworked the front-end using Vue 3 and with new UI designs, resulting in a cleaner code base developed using best practices.",
             "Developed the back-end in Node.js using CQRS and event-driven micro-services architecture.",
-            "Redesigned and refactored the processing pipeline which resulted in a more robust, efficient pipeline, and easier to add new features.",
+            "Redesigned and refactored the processing pipeline which resulted in a more robust, efficient pipeline, and made it easier to add new features.",
             "Implemented pagination with Cosmos DB which resolved an issue with some pages crashing due to too much data being loaded at once.",
         ],
     },

@@ -10,7 +10,7 @@ const skills: Skills = {
         "Spring boot, Hibernate",
         "AWS",
         "Azure",
-        "PostgresSQL",
+        "PostgreSQL",
         "Python",
         "C/C++",
     ],
